@@ -30,7 +30,7 @@ const Login = () => {
         if (data.success) {
           setIsLoggedIn(true);
           getUserData();
-          navigate("/");
+          navigate("/email-verify");
         } else {
           toast.error(data.message);
         }
@@ -43,8 +43,8 @@ const Login = () => {
         if (data.success) {
           setIsLoggedIn(true);
           getUserData();
-          // navigate("/");
-          navigate("/email-verify");
+          navigate("/");
+          // navigate("/email-verify");
         } else {
           toast.error(data.message);
         }
