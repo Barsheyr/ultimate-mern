@@ -11,7 +11,10 @@ const port = process.env.PORT || 4000;
 
 await connectDB();
 
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5174"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:5174, https://ultimate-mern.vercel.app",
+];
 
 // Middleware configuration
 app.use(express.json());
